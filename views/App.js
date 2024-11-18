@@ -21,6 +21,10 @@ App.get("/greeting", (req, res) => {
     console.log("Hello, Fehér Máté");
 });
 
-App.get("nodejs ", (req, res) => {
+App.get("/nodejs ", (req, res) => {
     console.log("A Node.js egy olyan szerveroldali JavaScript futtatókörnyezet, amely a V8 JavaScript motorra épül.");
 });
+
+App.get("/api/users", (res) => {
+    send();
+})
